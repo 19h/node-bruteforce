@@ -1,0 +1,24 @@
+{
+  "author": "Stephan Meijer <me@stephanmeijer.com> (http://stephanmeijer.com/)",
+  "name": "node-bruteforce",
+  "description": "JavaScript module for brute forcing things.",
+  "tags": [
+    "brute force",
+    "security",
+    "hacking",
+    "hash"
+  ],
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/StephanMeijer/node-bruteforce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StephanMeijer/node-bruteforce/issues"
+  },
+  "main": "bruteforce.js",
+  "engines": {
+    "node": "*"
+  },
+  "optionalDependencies": {}
+}
