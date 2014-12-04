@@ -1,6 +1,19 @@
 module.exports = function(characters, callback) {
 	
-	var i, intToCharacterBasedString, result;
+	var i, intToCharacterBasedString, result, sortedCharacters;
+	
+	if(typeof characters == 'string')
+		characters = characters.split("");
+	
+	// Sort all characters
+	characters.sort();
+	characters = characters.filter(function(value, index, arr){
+		if(index < 1) {
+			return true;
+		} else {
+			return value != arr[index-1];
+		}
+	});
 	
 	characters = [""].concat(characters); // Useless empty value to start this array on index = 1
 	
